@@ -2,16 +2,22 @@
 
 ### What is it?
 
-Minecraft-Java-Edition-Server is contributed by [Mojang](https://minecraft.net/en-us/download/server).
+Minecraft-Java-Edition-Server is contributed by [Mojang](https://minecraft.net/en-us/download/server/).
+
+Due to licensing, no one can redistribute the software. Please build this image in your environment.
 
 ### Example usages
 
-Replace `ARCH` for your system architecture. Available option(s): `x86_64`
+- To build the image:
+
+```console
+$ docker build YOUR_VERSION/ --tag calvintam236/minecraft-java-edition-server:YOUR_VERSION
+```
 
 - To run the container in background:
 
 ```console
-$ docker run -v minecraft-java-edition-server:/minecraft-java-edition-server -d --name YOUR_CONTAINER_NAME -p YOUR_PORT:YOUR_PORT calvintam236/minecraft-java-edition-server:ARCH
+$ docker run -v minecraft-java-edition-server:/mnt/minecraft-java-edition-server -d --name YOUR_CONTAINER_NAME -p YOUR_PORT:YOUR_PORT calvintam236/minecraft-java-edition-server:YOUR_VERSION
 ```
 
 - To fetch logs of a container:
