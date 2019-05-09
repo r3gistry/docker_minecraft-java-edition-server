@@ -17,7 +17,7 @@ $ docker build YOUR_VERSION/ --tag calvintam236/minecraft-java-edition-server:YO
 - To run the container in background:
 
 ```console
-$ docker run -v minecraft-java-edition-server:/mnt/minecraft-java-edition-server -d --name YOUR_CONTAINER_NAME -p YOUR_PORT:YOUR_PORT calvintam236/minecraft-java-edition-server:YOUR_VERSION
+$ docker run -v minecraft-java-edition-server:/mnt/minecraft-java-edition-server -d --name YOUR_CONTAINER_NAME -p YOUR_PORT:YOUR_PORT -p YOUR_PORT:YOUR_PORT/udp calvintam236/minecraft-java-edition-server:YOUR_VERSION
 ```
 
 - To fetch logs of a container:

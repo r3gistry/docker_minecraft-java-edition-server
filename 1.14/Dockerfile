@@ -10,6 +10,6 @@ ADD \
 https://launcher.mojang.com/v1/objects/f1a0073671057f01aa843443fef34330281333ce/server.jar \
 /usr/local/minecraft-java-edition-server/minecraft-java-edition-server.jar
 
-WORKDIR /mnt/minecraft-java-edition-server/
+VOLUME ["/mnt/minecraft-java-edition-server/"]
 
 ENTRYPOINT ["java", "-XX:+UnlockExperimentalVMOptions", "-XX:+UseCGroupMemoryLimitForHeap", "-jar", "/usr/local/minecraft-java-edition-server/minecraft-java-edition-server.jar", "nogui"]
