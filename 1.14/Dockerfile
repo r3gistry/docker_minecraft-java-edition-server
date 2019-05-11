@@ -1,6 +1,6 @@
 FROM openjdk:8-jre-alpine
 
-LABEL maintainer="calvintam236"
+LABEL maintainer="R3GISTRY"
 LABEL description="Minecraft-Java-Edition-Server in Docker."
 
 RUN \
