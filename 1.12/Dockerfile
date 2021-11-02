@@ -4,7 +4,7 @@ LABEL maintainer="R3GISTRY"
 LABEL description="Minecraft-Java-Edition-Server in Docker."
 
 RUN \
-mkdir /usr/local/minecraft-java-edition-server
+mkdir /usr/local/minecraft-java-edition-server/
 
 ADD \
 https://launcher.mojang.com/v1/objects/886945bfb2b978778c3a0288fd7fab09d315b25f/server.jar \
