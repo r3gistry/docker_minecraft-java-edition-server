@@ -20,6 +20,8 @@ $ docker build YOUR_VERSION/ --tag r3gistry/minecraft-java-edition-server:YOUR_V
 $ docker run -v minecraft-java-edition-server:/mnt/minecraft-java-edition-server/ -d --name YOUR_CONTAINER_NAME -p YOUR_PORT:YOUR_PORT -p YOUR_PORT:YOUR_PORT/udp r3gistry/minecraft-java-edition-server:YOUR_VERSION
 ```
 
+After first run, stop container and make changes to `server.properties` at `minecraft-java-edition-server`.
+
 - To fetch logs of a container:
 
 ```console
