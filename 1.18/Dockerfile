@@ -7,7 +7,7 @@ RUN \
 mkdir /usr/local/minecraft-java-edition-server/
 
 ADD \
-https://launcher.mojang.com/v1/objects/125e5adf40c659fd3bce3e66e67a16bb49ecc1b9/server.jar \
+https://launcher.mojang.com/v1/objects/c8f83c5655308435b3dcf03c06d9fe8740a77469/server.jar \
 /usr/local/minecraft-java-edition-server/minecraft-java-edition-server.jar
 
 VOLUME ["/mnt/minecraft-java-edition-server/"]
